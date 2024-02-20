@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: grotesk;
+  src: url("/font/SpaceGrotesk-Regular.ttf");
+}
+
+body {
+  font-family: grotesk;
+  height: 100vh;
+  background: url("image/pexels-aleksandar-pasaric-325185.jpg") no-repeat center
+    center/cover;
+}
+
+.container {
+  display: flex;
+}
+
+.text-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #325d67;
+}
+
+.title-header {
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 50px;
+  max-width: 400px;
+  min-width: 100px;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn-about {
+  text-decoration: none;
+  color: white;
+  background-color: #325d67;
+  width: 200px;
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  box-shadow: 0 0 3px #325d67;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.form-element {
+  width: 60%;
+  display: grid;
+  justify-content: center;
+}
+
+.form-input {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border-color: rgba(255, 255, 255, 0.514);
+  box-shadow: 0 0 1px #325d67;
+  color: white;
+  font-family: grotesk;
+  font-size: 16px;
+}
+
+.form-input:focus-visible {
+  outline: none;
+}
+
+.title-form {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 34px;
+}
+
+.btn-connexion {
+  cursor: pointer;
+  width: 300px;
+  color: white;
+  font-size: 18px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 3px #325d67;
+  background-color: #325d67;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.562);
+}
+
+.btn-forgot {
+  display: flex;
+  justify-self: end;
+  color: white;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 675px) {
+  .title-header {
+    font-size: 24px;
+  }
+  .btn-about {
+    width: 180px;
+    font-size: 20px;
+  }
+  .btn-connexion {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title-header {
+    font-size: 24px;
+  }
+  .btn-about {
+    width: 120px;
+    font-size: 20px;
+  }
+  .btn-connexion {
+    width: 120px;
+  }
+  .form-input {
+    width: 120px;
+  }
+}
